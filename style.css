@@ -1,98 +1,53 @@
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f6f6;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #eef4f8;
+  padding: 0;
   color: #333;
 }
 
 .container {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  max-width: 800px;
+  margin: auto;
+  padding: 2em;
+  background-color: #fff;
 }
 
 .slide {
   display: none;
-  padding: 2em;
-  height: 100vh;
-  box-sizing: border-box;
-  transform: translateX(100%);
-  opacity: 0;
-  transition: transform 0.8s ease, opacity 0.8s ease;
+  padding: 2em 0;
 }
 
 .slide.active {
   display: block;
-  transform: translateX(0);
-  opacity: 1;
 }
 
 h1, h2 {
-  color: #135c79;
   text-align: center;
+  color: #205070;
 }
 
-.nav-buttons {
-  position: fixed;
-  bottom: 1em;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 1em;
-  z-index: 999;
-}
-
-.nav-buttons button {
-  background-color: #135c79;
+button {
+  background-color: #205070;
   color: #fff;
-  border: none;
-  padding: 0.7em 1.2em;
-  border-radius: 5px;
-  font-size: 1em;
-  cursor: pointer;
-}
-
-#startPresentation {
-  margin-top: 2em;
-  background-color: #135c79;
-  color: #fff;
-  border: none;
   padding: 0.8em 1.5em;
-  font-size: 1em;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-#startPresentation:hover {
-  background-color: #0e3f59;
-}
-
-#downloadPDF {
-  position: fixed;
-  bottom: 4em;
-  right: 1em;
-  background-color: #27ae60;
-  color: white;
   border: none;
-  padding: 0.6em 1em;
   border-radius: 5px;
-  cursor: pointer;
+  margin: 1em auto;
+  display: block;
   font-size: 1em;
-  z-index: 1000;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-  .slide {
-    padding: 1em;
-  }
-  h1, h2 {
-    font-size: 1.5em;
-  }
-  .nav-buttons button,
-  #downloadPDF,
-  #startPresentation {
-    padding: 0.5em 1em;
-    font-size: 0.9em;
-  }
+button:hover {
+  background-color: #163c57;
+}
+
+a {
+  color: #205070;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
