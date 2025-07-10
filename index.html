@@ -11,35 +11,109 @@
 <body>
   <div class="container">
 
-    <!-- 🏠 Pantalla de Bienvenida -->
+    <!-- 🏠 Portada -->
     <section class="slide active" id="intro">
-      <h1>Propuesta de Vigilancia</h1>
+      <img src="oasis.jpg" alt="Oasis Residencial" style="max-width: 300px; display: block; margin: 0 auto 1em;" />
+      <h1>Propuesta de Vigilancia Integral</h1>
       <h2>Oasis Residencial</h2>
-      <p style="font-size: 1.1em; margin-top: 2em; text-align: center;">
-        Presentación digital elaborada por <strong>Miguel Guzo</strong><br>
-        Ofrecida por <strong>Grupo Kasby</strong> en colaboración con <strong>Beroto Seguridad Privada</strong><br><br>
-        Destinada exclusivamente al comité vecinal y personal administrativo del fraccionamiento Oasis Residencial.<br><br>
-        <em>Correcciones realizadas con asistencia de Copilot de Microsoft 🤖</em>
+      <p style="text-align: center;">
+        Elaborado por <strong>Grupo Kasby</strong><br>
+        En colaboración con <strong>Beroto Seguridad Privada</strong><br>
+        Proyecto exclusivo para el comité vecinal de Oasis Residencial
       </p>
-      <div style="text-align: center;">
-        <button id="startPresentation">🎬 Comenzar Presentación</button>
-      </div>
+      <button id="startPresentation">🎬 Comenzar Presentación</button>
     </section>
 
-    <!-- Secciones del proyecto: 1–11 -->
-    <!-- Agrega todas las secciones trabajadas como diapositivas aquí… -->
+    <!-- 📜 Carta -->
+    <section class="slide">
+      <h2>Carta de Presentación</h2>
+      <p>
+        Estimados miembros del Comité Vecinal:<br><br>
+        Agradecemos la oportunidad de presentar esta propuesta de vigilancia integral diseñada para atender las necesidades de su fraccionamiento. Nuestra misión es ofrecer servicios funcionales, viables y cercanos, que garanticen orden y tranquilidad.<br><br>
+        Atentamente,<br>Equipo de Grupo Kasby
+      </p>
+    </section>
 
+    <!-- 🎯 Objetivos -->
+    <section class="slide">
+      <h2>Objetivos del Servicio</h2>
+      <ul>
+        <li>Vigilancia 24/7 mediante turnos 24x24</li>
+        <li>Control de accesos vehicular y peatonal con bitácora digital</li>
+        <li>Rondines grabados con evidencia</li>
+        <li>Canal directo con comité y administración</li>
+        <li>Gestión segura de paquetería y riesgos</li>
+      </ul>
+    </section>
+
+    <!-- ⚙️ Metodología -->
+    <section class="slide">
+      <h2>Metodología de Trabajo</h2>
+      <p><strong>Accesos:</strong> QR con Resident, WhatsApp obligatorio, INE peatonal</p>
+      <p><strong>Rondines:</strong> 6PM, 10PM, 3AM, 7AM – grabados y reportados</p>
+      <p><strong>Paquetería:</strong> Evidencias y receptor identificado</p>
+      <p><strong>Conflictos:</strong> Evaluación, canalización y reporte inmediato</p>
+    </section>
+
+    <!-- 🧍‍♂️ Recursos -->
+    <section class="slide">
+      <h2>Recursos Humanos y Materiales</h2>
+      <p>2 elementos (turno 24x24) capacitados y acreditados. Documentación completa, uniforme táctico y capacitación continua. Acceso digital y bitácora física.</p>
+    </section>
+
+    <!-- ⏰ Cronograma -->
+    <section class="slide">
+      <h2>Cronograma de Implementación</h2>
+      <ol>
+        <li>Coordinación con comité</li>
+        <li>Presentación del personal</li>
+        <li>Capacitación operativa</li>
+        <li>Inicio formal del servicio</li>
+        <li>Supervisión externa</li>
+      </ol>
+    </section>
+
+    <!-- 💰 Costos -->
+    <section class="slide">
+      <h2>Costos y Forma de Pago</h2>
+      <p>65 viviendas / $29,250 mensual / $450 por vivienda</p>
+      <p>Facturación mensual, cancelación sin penalización con 15 días de aviso</p>
+    </section>
+
+    <!-- ⚖️ Términos -->
+    <section class="slide">
+      <h2>Términos y Condiciones</h2>
+      <ul>
+        <li>Servicio mensual sin contrato forzoso</li>
+        <li>Reposición inmediata del personal</li>
+        <li>Protección de datos garantizada</li>
+        <li>Evaluación mensual y mejora continua</li>
+        <li>Protocolo de emergencia activado ante incidentes graves</li>
+      </ul>
+    </section>
+
+    <!-- 📎 Cierre -->
+    <section class="slide">
+      <h2>Cierre y Contacto</h2>
+      <p>
+        Agradecemos la oportunidad de presentar esta propuesta. Estamos listos para comenzar con profesionalismo, cercanía y resultados.<br><br>
+        <strong>Grupo Kasby</strong><br>
+        Tel: <a href="tel:2218230301">2218230301</a><br>
+        <a href="https://www.google.com.mx/maps/place/Oasis+Residencial" target="_blank">📍 Ver ubicación en Google Maps</a>
+      </p>
+    </section>
   </div>
 
-  <!-- ⏮️ Botones de navegación -->
+  <!-- ⏮️ Navegación -->
   <div class="nav-buttons">
     <button id="prev"><i class="fas fa-chevron-left"></i> Anterior</button>
     <button id="next">Siguiente <i class="fas fa-chevron-right"></i></button>
   </div>
 
-  <!-- 📄 Botón para descargar PDF -->
+  <!-- 📄 PDF -->
   <button id="downloadPDF">📄 Descargar en PDF</button>
 
+  <!-- 🔧 Script -->
   <script src="script.js"></script>
 </body>
 </html>
